@@ -117,3 +117,8 @@ dependencies {
     implementation("com.github.manojpedvi.stateframe:stateframe:v0.1.0")
 }
 ```
+
+---
+
+Created by [Manoj Pedvi](https://github.com/manojpedvi).  
+If StateFrame helps your Compose project, a star on GitHub is appreciated.
