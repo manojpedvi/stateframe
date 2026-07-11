@@ -39,9 +39,13 @@ dependencies {
 publishing {
     publications {
         register<MavenPublication>("release") {
-            groupId = "com.manojpedvi"
+            groupId = if (System.getenv("JITPACK") == "true") {
+                "com.github.manojpedvi.stateframe"
+            } else {
+                "com.manojpedvi"
+            }
             artifactId = "stateframe"
-            version = "0.1.0"
+            version = System.getenv("VERSION") ?: "0.1.0"
 
             afterEvaluate {
                 from(components["release"])
@@ -50,6 +54,7 @@ publishing {
             pom {
                 name.set("StateFrame")
                 description.set("Reusable Jetpack Compose state renderer for loading, empty, error, and content UI.")
+                url.set("https://github.com/manojpedvi/stateframe")
             }
         }
     }

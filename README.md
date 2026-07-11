@@ -1,5 +1,7 @@
 # StateFrame
 
+[![](https://jitpack.io/v/manojpedvi/stateframe.svg)](https://jitpack.io/#manojpedvi/stateframe)
+
 StateFrame is a small Jetpack Compose library for rendering common async UI states:
 loading, empty, error, and success content.
 
@@ -93,13 +95,36 @@ StateFrame(
 - `:stateframe` - reusable Compose library
 - `:sample` - demo app showing loading, empty, error, and success states
 
+## Installation
+
+Add JitPack to `settings.gradle.kts`:
+
+```kotlin
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url = uri("https://jitpack.io") }
+    }
+}
+```
+
+Add the dependency:
+
+```kotlin
+dependencies {
+    implementation("com.github.manojpedvi.stateframe:stateframe:v0.1.0")
+}
+```
+
 ## Local publishing
 
 ```bash
 ./gradlew :stateframe:publishToMavenLocal
 ```
 
-The initial Maven coordinates are:
+Local Maven coordinates are:
 
 ```kotlin
 implementation("com.manojpedvi:stateframe:0.1.0")
