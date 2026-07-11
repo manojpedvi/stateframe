@@ -117,10 +117,3 @@ dependencies {
     implementation("com.github.manojpedvi.stateframe:stateframe:v0.1.0")
 }
 ```
-
-Because this repository has a separate `:stateframe` library module, the public
-JitPack artifact uses:
-
-```text
-com.github.manojpedvi.stateframe:stateframe:v0.1.0
-```
