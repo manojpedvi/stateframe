@@ -124,17 +124,3 @@ JitPack artifact uses:
 ```text
 com.github.manojpedvi.stateframe:stateframe:v0.1.0
 ```
-
-## Local publishing
-
-```bash
-./gradlew :stateframe:publishToMavenLocal
-```
-
-Local Maven coordinates are:
-
-```kotlin
-implementation("com.manojpedvi:stateframe:0.1.0")
-```
-
-Use this only with `mavenLocal()`. It is not available from Maven Central yet.
