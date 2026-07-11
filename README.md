@@ -14,6 +14,16 @@ StateFrame(
 }
 ```
 
+## Preview
+
+| Loading | Empty |
+| --- | --- |
+| <img src="art/screenshots/loading.png" width="240" alt="StateFrame loading state" /> | <img src="art/screenshots/empty.png" width="240" alt="StateFrame empty state" /> |
+
+| Error | Success |
+| --- | --- |
+| <img src="art/screenshots/error.png" width="240" alt="StateFrame error state" /> | <img src="art/screenshots/success.png" width="240" alt="StateFrame success state" /> |
+
 ## Package
 
 ```kotlin
